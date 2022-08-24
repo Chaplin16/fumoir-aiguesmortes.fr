@@ -6,14 +6,47 @@ html{
     min-height: 100%!important;
 }
 
+$color-dark : #333232;
+
 .bg-header{
     background: linear-gradient(100deg, #363636 50%, #191919 100px);
 }
 
 .color-dark {
-    color: #333232 
+    color: $color-dark;
 }
 
+
+nav {
+    button:hover{
+        outline: none!important;
+        box-shadow: 0 0 0 0rem!important;
+        background-color: #c9652c!important;
+        border: 1px solid $color-dark;
+        span{
+            color: $color-dark!important;
+        }
+    }
+    button:focus{
+        outline: none!important;
+        box-shadow: 0 0 0 0rem!important;
+    }
+    &:hover{
+        background-color: rgba(177, 175, 175, 0.6);
+    }
+}
 main{
     padding-bottom: 30rem;
 }
+
+
+
+
+
+
+  
+  @media screen and (max-width: 1100px) {
+    .imgHeader {
+      display: none;
+    }
+  }

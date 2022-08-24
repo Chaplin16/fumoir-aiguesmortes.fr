@@ -14,8 +14,31 @@ html {
   color: #333232;
 }
 
+nav button:hover {
+  outline: none !important;
+  box-shadow: 0 0 0 0rem !important;
+  background-color: #c9652c !important;
+  border: 1px solid #333232;
+}
+nav button:hover span {
+  color: #333232 !important;
+}
+nav button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 0rem !important;
+}
+nav:hover {
+  background-color: rgba(177, 175, 175, 0.6);
+}
+
 main {
   padding-bottom: 30rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .imgHeader {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
