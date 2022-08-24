@@ -1,0 +1,19 @@
+html{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    width:100%; 
+    font-size: 1.2rem;
+    min-height: 100%!important;
+}
+
+.bg-header{
+    background: linear-gradient(100deg, #363636 50%, #191919 100px);
+}
+
+.color-dark {
+    color: #333232 
+}
+
+main{
+    padding-bottom: 30rem;
+}
