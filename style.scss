@@ -1,7 +1,10 @@
+
+
 html{
     box-sizing: border-box;
     scroll-behavior: smooth;
     width:100%; 
+    max-width: 100%;
     font-size: 1.2rem;
     min-height: 100%!important;
 }
@@ -9,13 +12,12 @@ html{
 $color-dark : #333232;
 
 .bg-header{
-    background: linear-gradient(100deg, #363636 50%, #191919 100px);
+    background: linear-gradient(100deg, $color-dark 50%, #191919 100px);
 }
 
 .color-dark {
     color: $color-dark;
 }
-
 
 nav {
     button:hover{
@@ -35,12 +37,6 @@ nav {
         background-color: rgba(177, 175, 175, 0.6);
     }
 }
-main{
-    padding-bottom: 30rem;
-}
-
-
-
 
 
 
