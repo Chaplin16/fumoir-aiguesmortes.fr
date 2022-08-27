@@ -1,4 +1,4 @@
-
+@import 'keyframes';
 
 html{
     box-sizing: border-box;
@@ -38,6 +38,24 @@ nav {
     }
 }
 
+main{
+    padding-bottom: 30rem;
+    .shadow{
+        box-shadow: 1.5px 1.5px 4px $color-dark!important;
+    } 
+    .img-dish img:first-child{
+        animation: appearDish 600ms;
+    }
+    .img-dish img:nth-child(2){
+        animation: appearDish 1000ms ease-in-out;
+    }
+    .img-dish img:nth-child(3){
+        animation: appearDish 1400ms ease-in-out;   
+    }
+    article{
+        animation: appearArticle 2000ms ease-in;
+    }
+}
 
 
   
