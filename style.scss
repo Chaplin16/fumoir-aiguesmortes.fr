@@ -36,24 +36,28 @@ nav {
     &:hover{
         background-color: rgba(177, 175, 175, 0.6);
     }
+    .active{
+        border-bottom: 2px solid #c9652c;
+        display: inline-block;
+    }
 }
 
 main{
-    padding-bottom: 30rem;
+
     .shadow{
         box-shadow: 1.5px 1.5px 4px $color-dark!important;
     } 
     .img-dish img:first-child{
-        animation: appearDish 600ms;
+        animation: appearArticle 1000ms;
     }
     .img-dish img:nth-child(2){
-        animation: appearDish 1000ms ease-in-out;
+        animation: appearArticle 2000ms ease-in-out;
     }
     .img-dish img:nth-child(3){
-        animation: appearDish 1400ms ease-in-out;   
+        animation: appearArticle 3000ms ease-in-out;   
     }
     article{
-        animation: appearArticle 2000ms ease-in;
+        animation: appearArticle 3500ms ease-in;
     }
 }
 
@@ -62,5 +66,8 @@ main{
   @media screen and (max-width: 1100px) {
     .imgHeader {
       display: none;
+    }
+    .active{
+        border-bottom: none!important;
     }
   }

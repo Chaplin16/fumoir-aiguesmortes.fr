@@ -1,17 +1,8 @@
-@keyframes appearDish {
-  0% {
-    transform: translateY(450px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-  }
-}
 @keyframes appearArticle {
   0% {
     opacity: 0;
   }
-  60% {
+  40% {
     opacity: 0;
   }
   100% {
@@ -51,29 +42,34 @@ nav button:focus {
 nav:hover {
   background-color: rgba(177, 175, 175, 0.6);
 }
-
-main {
-  padding-bottom: 30rem;
+nav .active {
+  border-bottom: 2px solid #c9652c;
+  display: inline-block;
 }
+
 main .shadow {
   box-shadow: 1.5px 1.5px 4px #333232 !important;
 }
 main .img-dish img:first-child {
-  animation: appearDish 600ms;
+  animation: appearArticle 1000ms;
 }
 main .img-dish img:nth-child(2) {
-  animation: appearDish 1000ms ease-in-out;
+  animation: appearArticle 2000ms ease-in-out;
 }
 main .img-dish img:nth-child(3) {
-  animation: appearDish 1400ms ease-in-out;
+  animation: appearArticle 3000ms ease-in-out;
 }
 main article {
-  animation: appearArticle 2000ms ease-in;
+  animation: appearArticle 3500ms ease-in;
 }
 
 @media screen and (max-width: 1100px) {
   .imgHeader {
     display: none;
+  }
+
+  .active {
+    border-bottom: none !important;
   }
 }
 
