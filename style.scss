@@ -10,6 +10,7 @@ html{
 }
 
 $color-dark : #333232;
+$color-orange:#c9652c;
 
 .bg-header{
     background: linear-gradient(100deg, $color-dark 50%, #191919 100px);
@@ -23,7 +24,7 @@ nav {
     button:hover{
         outline: none!important;
         box-shadow: 0 0 0 0rem!important;
-        background-color: #c9652c!important;
+        background-color: $color-orange!important;
         border: 1px solid $color-dark;
         span{
             color: $color-dark!important;
@@ -37,13 +38,12 @@ nav {
         background-color: rgba(177, 175, 175, 0.6);
     }
     .active{
-        border-bottom: 2px solid #c9652c;
+        border-bottom: 2px solid $color-orange;
         display: inline-block;
     }
 }
 
 main{
-
     .shadow{
         box-shadow: 1.5px 1.5px 4px $color-dark!important;
     } 
