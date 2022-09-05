@@ -63,14 +63,4 @@ main article {
   animation: appearArticle 3500ms ease-in;
 }
 
-@media screen and (max-width: 1100px) {
-  .imgHeader {
-    display: none;
-  }
-
-  .active {
-    border-bottom: none !important;
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
