@@ -65,7 +65,7 @@ nav button:hover {
   border: 1px solid #333232;
 }
 nav button:hover span {
-  color: #333232 !important;
+  color: #fff !important;
 }
 nav button:focus {
   outline: none !important;
