@@ -1,4 +1,5 @@
 @import 'keyframes';
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 html{
     box-sizing: border-box;
@@ -7,17 +8,29 @@ html{
     max-width: 100%;
     font-size: 1.2rem;
     min-height: 100%!important;
+    color: #333232!important;
 }
 
 $color-dark : #333232;
 $color-orange:#c9652c;
 
 .bg-header{
-    background: linear-gradient(100deg, $color-dark 50%, #191919 100px);
+    background: linear-gradient(100deg, #444444 50%, #1d1c1c 100px);
 }
 
-.color-dark {
+.bg-grey{
+    background-color: rgba(177, 175, 175, 0.6);;
+}
+
+.text-dark{
     color: $color-dark;
+}
+
+.text-orange{
+    color: $color-orange;
+}
+.font{
+    font-family: 'Acme', sans-serif!important;
 }
 
 nav {
@@ -34,30 +47,54 @@ nav {
         outline: none!important;
         box-shadow: 0 0 0 0rem!important;
     }
-    &:hover{
-        background-color: rgba(177, 175, 175, 0.6);
-    }
     .active{
-        border-bottom: 2px solid $color-orange;
-        display: inline-block;
+        border-bottom: 3px solid $color-orange;
     }
 }
 
 main{
     .shadow{
-        box-shadow: 1.5px 1.5px 4px $color-dark!important;
+        box-shadow: 2.5px 2.5px 3px $color-dark!important;
     } 
-    .img-dish img:first-child{
+    .animation-img-dish img:first-child{
         animation: appearArticle 1000ms;
-    }
-    .img-dish img:nth-child(2){
+    }  
+    .animation-img-dish img:nth-child(2){
         animation: appearArticle 2000ms ease-in-out;
-    }
-    .img-dish img:nth-child(3){
+    }  
+    .animation-img-dish img:nth-child(3){
         animation: appearArticle 3000ms ease-in-out;   
     }
     article{
         animation: appearArticle 3500ms ease-in;
     }
+    
+    .nameDish p:nth-child(2n-1){
+        animation: moveNameDishLeft 1500ms ;
+    } 
+    .nameDish p:nth-child(2n){
+        animation: moveNameDishRight 1500ms ;
+    } 
 }
 
+@media screen and (max-width:1000px) {
+    .active{
+        border-bottom: 0px solid transparent!important;
+        
+    }
+    .active .text-dark{
+        color:$color-orange!important;
+    } 
+}
+
+@media screen and (min-width:1000px) {
+    .nameDish{
+        max-width: 60%!important;
+    }
+}
+
+@media screen and (min-width:1500px) {
+    .nameDish{
+        max-width: 50%!important;
+    }
+}

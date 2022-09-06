@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
 @keyframes appearArticle {
   0% {
     opacity: 0;
@@ -9,6 +10,24 @@
     opacity: 1;
   }
 }
+@keyframes moveNameDishLeft {
+  0% {
+    margin-left: 25%;
+    opacity: 0.5;
+  }
+  100% {
+    left: 0;
+  }
+}
+@keyframes moveNameDishRight {
+  0% {
+    margin-right: 25%;
+    opacity: 0.5;
+  }
+  100% {
+    right: 0;
+  }
+}
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -16,14 +35,27 @@ html {
   max-width: 100%;
   font-size: 1.2rem;
   min-height: 100% !important;
+  color: #333232 !important;
 }
 
 .bg-header {
-  background: linear-gradient(100deg, #333232 50%, #191919 100px);
+  background: linear-gradient(100deg, #444444 50%, #1d1c1c 100px);
 }
 
-.color-dark {
+.bg-grey {
+  background-color: rgba(177, 175, 175, 0.6);
+}
+
+.text-dark {
   color: #333232;
+}
+
+.text-orange {
+  color: #c9652c;
+}
+
+.font {
+  font-family: "Acme", sans-serif !important;
 }
 
 nav button:hover {
@@ -39,28 +71,50 @@ nav button:focus {
   outline: none !important;
   box-shadow: 0 0 0 0rem !important;
 }
-nav:hover {
-  background-color: rgba(177, 175, 175, 0.6);
-}
 nav .active {
-  border-bottom: 2px solid #c9652c;
-  display: inline-block;
+  border-bottom: 3px solid #c9652c;
 }
 
 main .shadow {
-  box-shadow: 1.5px 1.5px 4px #333232 !important;
+  box-shadow: 2.5px 2.5px 3px #333232 !important;
 }
-main .img-dish img:first-child {
+main .animation-img-dish img:first-child {
   animation: appearArticle 1000ms;
 }
-main .img-dish img:nth-child(2) {
+main .animation-img-dish img:nth-child(2) {
   animation: appearArticle 2000ms ease-in-out;
 }
-main .img-dish img:nth-child(3) {
+main .animation-img-dish img:nth-child(3) {
   animation: appearArticle 3000ms ease-in-out;
 }
 main article {
   animation: appearArticle 3500ms ease-in;
+}
+main .nameDish p:nth-child(2n-1) {
+  animation: moveNameDishLeft 1500ms;
+}
+main .nameDish p:nth-child(2n) {
+  animation: moveNameDishRight 1500ms;
+}
+
+@media screen and (max-width: 1000px) {
+  .active {
+    border-bottom: 0px solid transparent !important;
+  }
+
+  .active .text-dark {
+    color: #c9652c !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .nameDish {
+    max-width: 60% !important;
+  }
+}
+@media screen and (min-width: 1500px) {
+  .nameDish {
+    max-width: 50% !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
