@@ -70,10 +70,12 @@ main{
     }
     
     .nameDish p:nth-child(2n-1){
-        animation: moveNameDishLeft 1500ms ;
+        animation: moveNameDishLeft 3000ms;
+        
     } 
     .nameDish p:nth-child(2n){
-        animation: moveNameDishRight 1500ms ;
+        animation: moveNameDishRight 3000ms;
+        
     } 
 }
 

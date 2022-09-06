@@ -13,7 +13,7 @@
 @keyframes moveNameDishLeft {
   0% {
     margin-left: 25%;
-    opacity: 0.5;
+    color: #000;
   }
   100% {
     left: 0;
@@ -22,7 +22,7 @@
 @keyframes moveNameDishRight {
   0% {
     margin-right: 25%;
-    opacity: 0.5;
+    color: #000;
   }
   100% {
     right: 0;
@@ -91,10 +91,10 @@ main article {
   animation: appearArticle 3500ms ease-in;
 }
 main .nameDish p:nth-child(2n-1) {
-  animation: moveNameDishLeft 1500ms;
+  animation: moveNameDishLeft 3000ms;
 }
 main .nameDish p:nth-child(2n) {
-  animation: moveNameDishRight 1500ms;
+  animation: moveNameDishRight 3000ms;
 }
 
 @media screen and (max-width: 1000px) {
