@@ -56,29 +56,13 @@ nav {
 
 main{
     #btn-back-to-top {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background-color: transparent;
         & span{
             visibility: hidden;
-            width: 150px;
-            background-color: rgb(187, 183, 183);
-            color: rgb(54, 53, 53);
-            text-align: center;
-            border-radius: 6px;
-            padding: 5px 0;
-            /* Position the tooltip */
-            position: absolute;
-            z-index: 1;
-            top: -50px;
-            right: 0%;  
-            &:hover{
-                visibility: visible;
-            } 
         }
-
-      }
+        &:hover span{
+            visibility: visible;
+        } 
+    }
     .shadow{
         box-shadow: 2.5px 2.5px 3px $color-dark!important;
     } 
