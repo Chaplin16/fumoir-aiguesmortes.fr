@@ -119,15 +119,5 @@ main section {
     color: #c9652c !important;
   }
 }
-@media screen and (min-width: 1000px) {
-  .nameDish {
-    max-width: 60% !important;
-  }
-}
-@media screen and (min-width: 1500px) {
-  .nameDish {
-    max-width: 50% !important;
-  }
-}
 
 /*# sourceMappingURL=style.css.map */
