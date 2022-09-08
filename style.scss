@@ -78,7 +78,6 @@ main{
     article{
         animation: appearArticle 3500ms ease-in;
     }
-    
     .nameDish p:nth-child(2n-1){
         animation: moveNameDishLeft 3000ms;    
     } 
@@ -88,6 +87,9 @@ main{
     section {
         background: linear-gradient(315deg, rgb(39, 39, 39) 6%, rgb(228, 230, 231) 38%, rgb(242, 255, 255) 48%, rgb(20, 14, 14) 98%)!important;
     }
+}
+footer{
+    margin-top:-5px;
 }
 
 
