@@ -1,0 +1,19 @@
+{
+  "name": "fumoir-aiguesmortes.fr",
+  "version": "1.0.0",
+  "description": "site vitrine pour le fumoir d'Aigues-Mortes, codé en HTML, CSS, JS ",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chaplin16/fumoir-aiguesmortes.fr.git"
+  },
+  "author": "Aurore Création Web",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chaplin16/fumoir-aiguesmortes.fr/issues"
+  },
+  "homepage": "https://github.com/Chaplin16/fumoir-aiguesmortes.fr#readme"
+}
