@@ -24,9 +24,11 @@
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
 
     <!-- slick.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./js/slick/slick-theme.css" />
     <script src="./js/slick/slick.js"></script>
 
 
@@ -110,15 +112,22 @@
                 associés les uns aux autres, se délectent dans une harmonie de saveurs et de textures en bouche.
                 Créative, ingénieuse, fine et fraîche, où le terroir local y est sublimé, la cuisine de <em>La Maison Du
                     Fumoir</em> se savoure autant par une clientèle fidèle de particuliers à l'atelier d'Aigues-Mortes
-                que par les plus grandes maisons des restaurateurs alentours. L'excellente qualité des produits et le travail considérable et méticuleux de Régis est à la hauteur des très nombreuses éloges de ses clients.
+                que par les plus grandes maisons des restaurateurs alentours. L'excellente qualité des produits et le
+                travail considérable et méticuleux de Régis est à la hauteur des très nombreuses éloges de ses clients.
             </p>
-            <img class="p-2" src="images/magret-maison-du-fumoir-aigues-mortes.png"
-                alt="Carpaccio de taureau, filet mignon, magret de canard à la maison du fumoir"
-                style="max-width:350px; height:auto;" />
+            <div class="container text-center my-3">
+                <div class="row mx-auto my-auto justify-content-center">
+                    <div data-bs-ride="carousel">
+                        <div class="carousel-slick carousel ps-5" id="carousel">
+                            <!-- insertion via index.js et dishes.js-->
+                        </div>
+                    </div>
+                </div>
+            </div>
             <p>
                 Prêts à être dressés dans l'assiette immédiatement, aucune perte de temps, ces mets à la traçabilité
                 précise autant pour les produits de la mer (saumon, thon, espadon, poulpe) que pour la viande locale
-                (taureau, cochon, canard) flattent les papilles des plus fins gourmets. 
+                (taureau, cochon, canard) flattent les papilles des plus fins gourmets.
             </p>
         </article>
         <div class="d-flex justify-content-around fs-6 flex-wrap m-auto pb-5 font">
@@ -163,8 +172,7 @@
                     <div class="d-flex align-items-center pt-2 flex-column">
                         <img src="images/logo-aurore-creation-web.png" class="h-auto" style="max-width:100px;"
                             alt="logo de la sirene d'aurore Creation Web" />
-                        <a class="text-decoration-none text-white " 
-                        href="https://aurorecreationweb.fr"> Aurore
+                        <a class="text-decoration-none text-white " href="https://aurorecreationweb.fr"> Aurore
                             Creation Web </a>
                         <a href="law.html" class="text-white small text-decoration-none">Mentions légales</a>
                     </div>
@@ -172,6 +180,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/dishes.js"></script>
     <script src="js/index.js"></script>
     <script src="js/button-to-top.js"></script>
     <script src="js/scroll.js"></script>

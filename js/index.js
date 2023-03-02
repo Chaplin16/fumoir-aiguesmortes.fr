@@ -1,3 +1,4 @@
+
 function carousel(selector, data) {
     let element = document.querySelector(selector);
     data.forEach(function(d) {
@@ -7,7 +8,7 @@ function carousel(selector, data) {
     $(element).slick({
         centerMode: true,
         centerPadding: '0px',
-        slidesToShow: 1,
+        slidesToShow: 4,
         arrows: true,
         speed:1300,
         adaptiveHeight: true,
@@ -28,7 +29,7 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '0rem',
-                    slidesToShow: 1
+                    slidesToShow: 4
                 }
             },
             {
@@ -37,7 +38,7 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '0px',
-                    slidesToShow: 1
+                    slidesToShow: 3
                 }
             },
             {
@@ -46,7 +47,7 @@ function carousel(selector, data) {
                     arrows: true,
                     centerMode: true,
                     centerPadding: '0px',
-                    slidesToShow: 1
+                    slidesToShow: 2
                 }
              }
          ]
