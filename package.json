@@ -4,7 +4,7 @@
   "description": "site vitrine pour le fumoir d'Aigues-Mortes, codé en HTML, CSS, JS ",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./style.scss:./style.css"
+    "sass": "sass --watch ./scss/style.scss:../style.css"
   },
   "repository": {
     "type": "git",
