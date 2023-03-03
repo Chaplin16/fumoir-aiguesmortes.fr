@@ -1,4 +1,5 @@
-@import 'keyframes';
+@import './scss/color.scss';
+@import './scss/keyframes.scss';
 @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
 
 html{
@@ -13,21 +14,6 @@ html{
 
 img{
     object-fit: cover;
-}
-// COLORS BG & TEXT
-$color-dark : #333232;
-$color-orange:#c9652c;
-.bg-header{
-    background: linear-gradient(100deg, #444444 50%, #1d1c1c 100px);
-}
-.bg-grey{
-    background-color: rgba(177, 175, 175, 0.6);;
-}
-.text-dark{
-    color: $color-dark;
-}
-.text-orange{
-    color: $color-orange;
 }
 
 // FONT
@@ -87,13 +73,12 @@ main{
     section {
         background: linear-gradient(315deg, rgb(39, 39, 39) 6%, rgb(228, 230, 231) 38%, rgb(242, 255, 255) 48%, rgb(20, 14, 14) 98%)!important;
     }
-    .carousel img {
-        object-fit: contain;
-        width:10rem;
+    #carousel img {
+        width:100%!important;
         height: 13rem!important;
     }
-}
 
+}
 
 footer{
     margin-top:-5px;
