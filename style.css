@@ -110,8 +110,15 @@ main section {
   background: linear-gradient(315deg, rgb(39, 39, 39) 6%, rgb(228, 230, 231) 38%, rgb(242, 255, 255) 48%, rgb(20, 14, 14) 98%) !important;
 }
 main #carousel img {
-  width: 100% !important;
-  height: 13rem !important;
+  width: 15rem;
+  height: 11rem !important;
+  margin: 0 5px;
+  box-shadow: 1px 1px 3px #000;
+  border-radius: 4px;
+}
+main .row > * {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
 }
 
 footer {
@@ -124,6 +131,28 @@ footer a:nth-of-type(2):hover {
   color: rgb(180, 159, 180) !important;
 }
 
+@media screen and (min-width: 1300px) {
+  #carousel img {
+    width: 16rem;
+  }
+}
+@media screen and (min-width: 1101px) {
+  #carousel .card-img img {
+    width: 14rem !important;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1100px) {
+  #carousel img {
+    width: 12.5rem !important;
+    margin: auto !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  #carousel img {
+    width: 17rem !important;
+    margin: auto !important;
+  }
+}
 @media screen and (max-width: 1000px) {
   .active {
     border-bottom: 0px solid transparent !important;

@@ -7,7 +7,7 @@ const dishes = [
     {
         id: 2,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/boutique-maison-fumoir-aigues-morte.png"
+        photo:"images/gallery/saumon-fume-thon-aigues-mortes.jpeg"
     },
     {
         id: 3,
@@ -17,7 +17,7 @@ const dishes = [
     {
         id: 4,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/fumoir-aigues-mortes-regis.png"
+        photo:"images/gallery/saumon-fume-aigues-mortes-excellent.png"
     },
     {
         id: 5,
@@ -37,12 +37,12 @@ const dishes = [
     {
         id: 8,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/saumon-fume-aigues-mortes-excellent.png"
+        photo:"images/gallery/fumoir-aigues-mortes-regis.png"
     },
     {
         id: 9,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/saumon-fume-aigues-mortes-fumoir.png"
+        photo:"images/gallery/saumon-maison-fumoir-aigues-mortes.png"
     },
     {
         id: 10,
@@ -52,12 +52,12 @@ const dishes = [
     {
         id: 11,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/saumon-fume-thon-aigues-mortes.jpeg"
+        photo:"images/gallery/boutique-maison-fumoir-aigues-morte.png"
     },
     {
         id: 10,
         alt:"artisan macon aigues mortes beton dessus ferraillage",
-        photo:"images/gallery/saumon-maison-fumoir-aigues-mortes.png"
+        photo:"images/gallery/saumon-fume-aigues-mortes-fumoir.png"
     },
     {
         id: 11,

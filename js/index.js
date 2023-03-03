@@ -6,48 +6,41 @@ function carousel(selector, data) {
         `<div class="card-img"><img src="${d.photo}" alt="${d.alt}"></div>`;
     });
     $(element).slick({
-        centerMode: true,
-        centerPadding: '0px',
-        slidesToShow: 4,
-        arrows: true,
-        speed:1300,
+        centerMode: false,
+        slidesToScroll: 1,
+        slidesToShow: 5,
         adaptiveHeight: true,
+        centerPadding: '7px',
+        speed:1500,
+        autoplay:true,
         autoplaySpeed:1200,
-        autoplay: true,
+        arrows: true,
+        infinite: true,
+        pauseOnFocus: false,
+        pauseOnHover: false,
+        swipeToSlide: true,
         responsive: [{
-                breakpoint: 1150,
+                breakpoint: 1850,
                 settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 1 
+                    slidesToShow: 4
                 }
            },
             {
-                breakpoint: 1000,
+                breakpoint: 1450,
                 settings: {
-                    arrows: true,
-                    centerMode: true,
-                    centerPadding: '0rem',
-                    slidesToShow: 4
-                }
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    arrows: true,
-                    centerMode: true,
-                    centerPadding: '0px',
                     slidesToShow: 3
                 }
             },
             {
-                breakpoint: 550,
+                breakpoint: 968,
                 settings: {
-                    arrows: true,
-                    centerMode: true,
-                    centerPadding: '0px',
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1
                 }
              }
          ]
