@@ -131,6 +131,17 @@ footer a:nth-of-type(2):hover {
   color: rgb(180, 159, 180) !important;
 }
 
+.facebook {
+  max-width: 80%;
+  margin: auto;
+}
+.facebook .title_facebook {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #c9652c;
+}
+
 @media screen and (min-width: 1300px) {
   #carousel img {
     width: 16rem;

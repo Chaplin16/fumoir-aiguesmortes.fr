@@ -98,6 +98,18 @@ footer{
 }
 
 
+//PAGE OPINIONS
+.facebook{
+    max-width:80%;
+    margin:auto;
+    .title_facebook{
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+        color: $color-orange;
+    }
+}
+
 // RESPONSIVE
 @media screen and (min-width:1300px) {
     #carousel img {
